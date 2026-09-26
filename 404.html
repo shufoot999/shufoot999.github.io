@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ページが見つかりません</title>
+<script>
+  // graycia-tools 配下だけを移転先へ送る。それ以外は通常の「見つかりません」表示
+  var p = location.pathname;
+  if (p === '/graycia-tools' || p.indexOf('/graycia-tools/') === 0) {
+    location.replace('https://fujiwara-mira.github.io' + p + location.search + location.hash);
+  }
+</script>
+</head>
+<body>
+<p>ページが見つかりません。</p>
+</body>
+</html>
