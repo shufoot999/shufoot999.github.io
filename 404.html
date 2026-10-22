@@ -9,7 +9,7 @@
   // graycia-tools 配下だけを移転先へ送る。それ以外は通常の「見つかりません」表示
   var p = location.pathname;
   if (p === '/graycia-tools' || p.indexOf('/graycia-tools/') === 0) {
-    location.replace('https://fujiwara-mira.github.io/graycia' + p.slice(14) + location.search + location.hash);
+    location.replace('https://fujiwara-mira.github.io' + p + location.search + location.hash);
   }
 </script>
 </head>
